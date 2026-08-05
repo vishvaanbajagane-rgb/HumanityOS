@@ -8,7 +8,11 @@ import { ErrorBoundary } from '@/components/shared/ErrorBoundary';
 import { HomePageSkeleton } from '@/components/shared/LoadingSkeleton';
 import { useAuth } from '@/hooks/useAuth';
 
-export default function MainLayout({ children }: { children: React.ReactNode }) {
+export default function MainLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const { user, loading } = useAuth();
   const router = useRouter();
 
@@ -29,9 +33,13 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
+
       <main className="flex-1">
-        <ErrorBoundary>{children}</ErrorBoundary>
+        <ErrorBoundary>
+          {children}
+        </ErrorBoundary>
       </main>
+
       <Footer />
     </div>
   );
