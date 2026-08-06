@@ -69,15 +69,24 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const signInWithGoogle = useCallback(async () => {
-    try {
-      await signInWithPopup(auth, googleProvider);
-      toast.success('Signed in successfully');
-    } catch (err) {
-      console.error(err);
-      toast.error('Google sign-in failed. Please try again.');
-      throw err;
+  try {
+    const result = await signInWithPopup(auth, googleProvider);
+
+    console.log("Google Login Success:", result.user);
+
+    toast.success("Signed in successfully");
+  } catch (err: any) {
+    if (err.code === "auth/popup-closed-by-user") {
+      return;
     }
-  }, []);
+
+    console.error(err);
+
+    toast.error(
+      err.message || "Google sign-in failed. Please try again."
+    );
+  }
+}, []);
 
   const signInWithEmail = useCallback(async (email: string, password: string) => {
     try {
