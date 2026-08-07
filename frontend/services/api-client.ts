@@ -1,5 +1,7 @@
 import axios, { type InternalAxiosRequestConfig } from 'axios';
 
+console.log("API URL:", process.env.NEXT_PUBLIC_API_URL);
+
 export const apiClient = axios.create({
   baseURL: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1',
   timeout: 15000,
