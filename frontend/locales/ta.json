@@ -1,0 +1,29 @@
+{
+  "common": {
+    "appName": "HumanityOS",
+    "tagline": "ஒவ்வொரு மனித தேவைக்கும் ஒரு நுண்ணறிவு தளம்"
+  },
+  "nav": {
+    "home": "முகப்பு",
+    "healthcare": "சுகாதாரம்",
+    "education": "கல்வி",
+    "employment": "வேலைவாய்ப்பு",
+    "governmentSchemes": "அரசுத் திட்டங்கள்",
+    "ngos": "தன்னார்வ அமைப்புகள்",
+    "volunteer": "தன்னார்வ சேவை",
+    "foodSupport": "உணவு உதவி",
+    "disasterAlerts": "பேரிடர் எச்சரிக்கைகள்",
+    "profile": "சுயவிவரம்",
+    "signOut": "வெளியேறு",
+    "notifications": "அறிவிப்புகள்"
+  },
+  "auth": {
+    "welcomeTitle": "HumanityOS",
+    "welcomeSubtitle": "ஒவ்வொரு மனித தேவைக்கும் ஒரு நுண்ணறிவு தளம்",
+    "continueWithGoogle": "Google மூலம் தொடரவும்",
+    "continueWithEmail": "மின்னஞ்சல் மூலம் தொடரவும்",
+    "continueAsGuest": "விருந்தினராக தொடரவும்",
+    "backToOptions": "அனைத்து உள்நுழைவு விருப்பங்களுக்கும் திரும்பவும்",
+    "terms": "தொடர்வதன் மூலம், HumanityOS இன் சேவை விதிமுறைகள் மற்றும் தனியுரிமைக் கொள்கையை ஏற்றுக்கொள்கிறீர்கள்."
+  }
+}

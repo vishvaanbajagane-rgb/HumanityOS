@@ -1,0 +1,29 @@
+{
+  "common": {
+    "appName": "HumanityOS",
+    "tagline": "ప్రతి మానవ అవసరానికి ఒక మేధో వేదిక"
+  },
+  "nav": {
+    "home": "హోమ్",
+    "healthcare": "ఆరోగ్య సంరక్షణ",
+    "education": "విద్య",
+    "employment": "ఉపాధి",
+    "governmentSchemes": "ప్రభుత్వ పథకాలు",
+    "ngos": "ఎన్‌జీవోలు",
+    "volunteer": "స్వచ్ఛంద సేవ",
+    "foodSupport": "ఆహార సహాయం",
+    "disasterAlerts": "విపత్తు హెచ్చరికలు",
+    "profile": "ప్రొఫైల్",
+    "signOut": "సైన్ అవుట్",
+    "notifications": "నోటిఫికేషన్‌లు"
+  },
+  "auth": {
+    "welcomeTitle": "HumanityOS",
+    "welcomeSubtitle": "ప్రతి మానవ అవసరానికి ఒక మేధో వేదిక",
+    "continueWithGoogle": "Googleతో కొనసాగండి",
+    "continueWithEmail": "ఇమెయిల్‌తో కొనసాగండి",
+    "continueAsGuest": "అతిథిగా కొనసాగండి",
+    "backToOptions": "అన్ని సైన్-ఇన్ ఎంపికలకు తిరిగి వెళ్లండి",
+    "terms": "కొనసాగించడం ద్వారా, మీరు HumanityOS సేవా నిబంధనలు మరియు గోప్యతా విధానాన్ని అంగీకరిస్తున్నారు."
+  }
+}

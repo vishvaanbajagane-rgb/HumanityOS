@@ -1,0 +1,29 @@
+{
+  "common": {
+    "appName": "HumanityOS",
+    "tagline": "Интеллектуальная платформа для любых человеческих потребностей"
+  },
+  "nav": {
+    "home": "Главная",
+    "healthcare": "Здравоохранение",
+    "education": "Образование",
+    "employment": "Трудоустройство",
+    "governmentSchemes": "Государственные программы",
+    "ngos": "НПО",
+    "volunteer": "Волонтёрство",
+    "foodSupport": "Продовольственная помощь",
+    "disasterAlerts": "Оповещения о чрезвычайных ситуациях",
+    "profile": "Профиль",
+    "signOut": "Выйти",
+    "notifications": "Уведомления"
+  },
+  "auth": {
+    "welcomeTitle": "HumanityOS",
+    "welcomeSubtitle": "Интеллектуальная платформа для любых человеческих потребностей",
+    "continueWithGoogle": "Продолжить с Google",
+    "continueWithEmail": "Продолжить с электронной почтой",
+    "continueAsGuest": "Продолжить как гость",
+    "backToOptions": "Вернуться ко всем вариантам входа",
+    "terms": "Продолжая, вы соглашаетесь с Условиями использования и Политикой конфиденциальности HumanityOS."
+  }
+}

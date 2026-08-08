@@ -1,0 +1,29 @@
+{
+  "common": {
+    "appName": "HumanityOS",
+    "tagline": "Eine intelligente Plattform für alle Bedürfnisse des Menschen"
+  },
+  "nav": {
+    "home": "Startseite",
+    "healthcare": "Gesundheitsversorgung",
+    "education": "Bildung",
+    "employment": "Beschäftigung",
+    "governmentSchemes": "Staatliche Programme",
+    "ngos": "NGOs",
+    "volunteer": "Freiwilligenarbeit",
+    "foodSupport": "Lebensmittelhilfe",
+    "disasterAlerts": "Katastrophenwarnungen",
+    "profile": "Profil",
+    "signOut": "Abmelden",
+    "notifications": "Benachrichtigungen"
+  },
+  "auth": {
+    "welcomeTitle": "HumanityOS",
+    "welcomeSubtitle": "Eine intelligente Plattform für alle Bedürfnisse des Menschen",
+    "continueWithGoogle": "Mit Google fortfahren",
+    "continueWithEmail": "Mit E-Mail fortfahren",
+    "continueAsGuest": "Als Gast fortfahren",
+    "backToOptions": "Zurück zu allen Anmeldeoptionen",
+    "terms": "Mit der Fortsetzung stimmen Sie den Nutzungsbedingungen und der Datenschutzrichtlinie von HumanityOS zu."
+  }
+}

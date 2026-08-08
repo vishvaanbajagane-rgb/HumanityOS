@@ -1,6 +1,29 @@
 {
+  "common": {
+    "appName": "HumanityOS",
+    "tagline": "हर मानवीय आवश्यकता के लिए एक बुद्धिमान प्लेटफ़ॉर्म"
+  },
   "nav": {
     "home": "होम",
-    "healthcare": "स्वास्थ्य सेवा"
+    "healthcare": "स्वास्थ्य सेवा",
+    "education": "शिक्षा",
+    "employment": "रोज़गार",
+    "governmentSchemes": "सरकारी योजनाएँ",
+    "ngos": "गैर-सरकारी संगठन",
+    "volunteer": "स्वयंसेवा",
+    "foodSupport": "खाद्य सहायता",
+    "disasterAlerts": "आपदा अलर्ट",
+    "profile": "प्रोफ़ाइल",
+    "signOut": "साइन आउट",
+    "notifications": "सूचनाएँ"
+  },
+  "auth": {
+    "welcomeTitle": "HumanityOS",
+    "welcomeSubtitle": "हर मानवीय आवश्यकता के लिए एक बुद्धिमान प्लेटफ़ॉर्म",
+    "continueWithGoogle": "Google के साथ जारी रखें",
+    "continueWithEmail": "ईमेल के साथ जारी रखें",
+    "continueAsGuest": "अतिथि के रूप में जारी रखें",
+    "backToOptions": "सभी साइन-इन विकल्पों पर वापस जाएँ",
+    "terms": "जारी रखकर, आप HumanityOS की सेवा की शर्तों और गोपनीयता नीति से सहमत होते हैं।"
   }
 }

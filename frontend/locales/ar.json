@@ -1,0 +1,29 @@
+{
+  "common": {
+    "appName": "HumanityOS",
+    "tagline": "منصة ذكية واحدة لكل احتياجات الإنسان"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "healthcare": "الرعاية الصحية",
+    "education": "التعليم",
+    "employment": "التوظيف",
+    "governmentSchemes": "المخططات الحكومية",
+    "ngos": "المنظمات غير الحكومية",
+    "volunteer": "التطوع",
+    "foodSupport": "دعم الغذاء",
+    "disasterAlerts": "تنبيهات الكوارث",
+    "profile": "الملف الشخصي",
+    "signOut": "تسجيل الخروج",
+    "notifications": "الإشعارات"
+  },
+  "auth": {
+    "welcomeTitle": "HumanityOS",
+    "welcomeSubtitle": "منصة ذكية واحدة لكل احتياجات الإنسان",
+    "continueWithGoogle": "المتابعة باستخدام Google",
+    "continueWithEmail": "المتابعة باستخدام البريد الإلكتروني",
+    "continueAsGuest": "المتابعة كضيف",
+    "backToOptions": "العودة إلى جميع خيارات تسجيل الدخول",
+    "terms": "بالمتابعة، فإنك توافق على شروط الخدمة وسياسة الخصوصية الخاصة بـ HumanityOS."
+  }
+}

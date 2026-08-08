@@ -1,0 +1,29 @@
+{
+  "common": {
+    "appName": "HumanityOS",
+    "tagline": "满足每个人类需求的智能平台"
+  },
+  "nav": {
+    "home": "首页",
+    "healthcare": "医疗保健",
+    "education": "教育",
+    "employment": "就业",
+    "governmentSchemes": "政府计划",
+    "ngos": "非政府组织",
+    "volunteer": "志愿服务",
+    "foodSupport": "食品援助",
+    "disasterAlerts": "灾害警报",
+    "profile": "个人资料",
+    "signOut": "退出登录",
+    "notifications": "通知"
+  },
+  "auth": {
+    "welcomeTitle": "HumanityOS",
+    "welcomeSubtitle": "满足每个人类需求的智能平台",
+    "continueWithGoogle": "使用 Google 继续",
+    "continueWithEmail": "使用电子邮件继续",
+    "continueAsGuest": "以访客身份继续",
+    "backToOptions": "返回所有登录选项",
+    "terms": "继续操作即表示您同意 HumanityOS 的服务条款和隐私政策。"
+  }
+}

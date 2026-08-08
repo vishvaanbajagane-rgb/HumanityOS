@@ -1,8 +1,9 @@
 'use client';
 
-import { useState, useTransition } from 'react';
+import { useTransition } from 'react';
 import { useLocale } from 'next-intl';
 import { Languages, Check } from 'lucide-react';
+
 import {
   DropdownMenu,
   DropdownMenuTrigger,
@@ -11,10 +12,12 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
 } from '@/components/ui/dropdown-menu';
+
 import { Button } from '@/components/ui/button';
-import { usePathname, useRouter } from '@/i18n/navigation';
-import { apiClient } from '@/services/api-client';
-import { useAuth } from '@/hooks/useAuth';
+import {
+  usePathname,
+  useRouter,
+} from '@/i18n/navigation';
 
 const LANGUAGES = [
   { code: 'en', name: 'English' },
@@ -36,39 +39,70 @@ export function LanguageSwitcher() {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
-  const { user } = useAuth();
+
   const [isPending, startTransition] = useTransition();
 
   const handleSelect = (code: string) => {
-    startTransition(() => {
-      router.replace(pathname, { locale: code });
-    });
-
-    if (user) {
-      apiClient.put('/profile/me', { preferredLanguage: code }).catch((err) => {
-        console.error('Failed to save language preference', err);
-      });
+    // Don't do anything if the selected language
+    // is already active.
+    if (code === locale) {
+      return;
     }
+
+    // Change the locale in the URL.
+    //
+    // Examples:
+    // /        -> /hi
+    // /hi      -> /ta
+    // /ta/home -> /fr/home
+    startTransition(() => {
+      router.replace(pathname, {
+        locale: code,
+      });
+    });
   };
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" aria-label="Change language" disabled={isPending}>
+        <Button
+          variant="ghost"
+          size="icon"
+          aria-label="Change language"
+          disabled={isPending}
+        >
           <Languages className="h-5 w-5" />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="max-h-80 overflow-y-auto">
-        <DropdownMenuLabel>Language</DropdownMenuLabel>
+
+      <DropdownMenuContent
+        align="end"
+        className="w-48"
+      >
+        <DropdownMenuLabel>
+          Select language
+        </DropdownMenuLabel>
+
         <DropdownMenuSeparator />
+
         {LANGUAGES.map((lang) => (
           <DropdownMenuItem
             key={lang.code}
             onSelect={() => handleSelect(lang.code)}
-            className={locale === lang.code ? 'bg-muted font-medium' : ''}
+            disabled={isPending}
+            className={
+              locale === lang.code
+                ? 'bg-muted font-medium'
+                : ''
+            }
           >
-            <span className="flex-1">{lang.name}</span>
-            {locale === lang.code && <Check className="h-3.5 w-3.5" />}
+            <span className="flex-1">
+              {lang.name}
+            </span>
+
+            {locale === lang.code && (
+              <Check className="ml-2 h-4 w-4" />
+            )}
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

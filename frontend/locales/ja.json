@@ -1,0 +1,29 @@
+{
+  "common": {
+    "appName": "HumanityOS",
+    "tagline": "あらゆる人間のニーズに対応するインテリジェントプラットフォーム"
+  },
+  "nav": {
+    "home": "ホーム",
+    "healthcare": "医療・ヘルスケア",
+    "education": "教育",
+    "employment": "雇用",
+    "governmentSchemes": "政府の制度",
+    "ngos": "NGO",
+    "volunteer": "ボランティア",
+    "foodSupport": "食料支援",
+    "disasterAlerts": "災害アラート",
+    "profile": "プロフィール",
+    "signOut": "サインアウト",
+    "notifications": "通知"
+  },
+  "auth": {
+    "welcomeTitle": "HumanityOS",
+    "welcomeSubtitle": "あらゆる人間のニーズに対応するインテリジェントプラットフォーム",
+    "continueWithGoogle": "Googleで続行",
+    "continueWithEmail": "メールアドレスで続行",
+    "continueAsGuest": "ゲストとして続行",
+    "backToOptions": "すべてのログインオプションに戻る",
+    "terms": "続行することで、HumanityOSの利用規約とプライバシーポリシーに同意したものとみなされます。"
+  }
+}
