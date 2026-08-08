@@ -1,5 +1,15 @@
 {
-  "common": {
-    "appName": "HumanityOS"
+  "common": { "appName": "HumanityOS", "tagline": "One Intelligent Platform for Every Human Need" },
+  "nav": {
+    "home": "Home", "healthcare": "Healthcare", "education": "Education", "employment": "Employment",
+    "governmentSchemes": "Govt. Schemes", "ngos": "NGOs", "volunteer": "Volunteer",
+    "foodSupport": "Food Support", "disasterAlerts": "Disaster Alerts", "profile": "Profile",
+    "signOut": "Sign out", "notifications": "Notifications"
+  },
+  "auth": {
+    "welcomeTitle": "HumanityOS", "welcomeSubtitle": "One Intelligent Platform for Every Human Need",
+    "continueWithGoogle": "Continue with Google", "continueWithEmail": "Continue with Email",
+    "continueAsGuest": "Continue as Guest", "backToOptions": "Back to all sign-in options",
+    "terms": "By continuing, you agree to HumanityOS's Terms of Service and Privacy Policy."
   }
 }

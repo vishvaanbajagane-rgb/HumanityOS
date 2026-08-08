@@ -1,7 +1,8 @@
 'use client';
 
-import { useState } from 'react';
-import { Languages } from 'lucide-react';
+import { useState, useTransition } from 'react';
+import { useLocale } from 'next-intl';
+import { Languages, Check } from 'lucide-react';
 import {
   DropdownMenu,
   DropdownMenuTrigger,
@@ -11,6 +12,9 @@ import {
   DropdownMenuSeparator,
 } from '@/components/ui/dropdown-menu';
 import { Button } from '@/components/ui/button';
+import { usePathname, useRouter } from '@/i18n/navigation';
+import { apiClient } from '@/services/api-client';
+import { useAuth } from '@/hooks/useAuth';
 
 const LANGUAGES = [
   { code: 'en', name: 'English' },
@@ -29,12 +33,28 @@ const LANGUAGES = [
 ];
 
 export function LanguageSwitcher() {
-  const [current, setCurrent] = useState('en');
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
+  const { user } = useAuth();
+  const [isPending, startTransition] = useTransition();
+
+  const handleSelect = (code: string) => {
+    startTransition(() => {
+      router.replace(pathname, { locale: code });
+    });
+
+    if (user) {
+      apiClient.put('/profile/me', { preferredLanguage: code }).catch((err) => {
+        console.error('Failed to save language preference', err);
+      });
+    }
+  };
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" aria-label="Change language">
+        <Button variant="ghost" size="icon" aria-label="Change language" disabled={isPending}>
           <Languages className="h-5 w-5" />
         </Button>
       </DropdownMenuTrigger>
@@ -44,10 +64,11 @@ export function LanguageSwitcher() {
         {LANGUAGES.map((lang) => (
           <DropdownMenuItem
             key={lang.code}
-            onSelect={() => setCurrent(lang.code)}
-            className={current === lang.code ? 'bg-muted font-medium' : ''}
+            onSelect={() => handleSelect(lang.code)}
+            className={locale === lang.code ? 'bg-muted font-medium' : ''}
           >
-            {lang.name}
+            <span className="flex-1">{lang.name}</span>
+            {locale === lang.code && <Check className="h-3.5 w-3.5" />}
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

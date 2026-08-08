@@ -45,3 +45,5 @@ const nextConfig = {
 };
 
 export default withNextIntl(nextConfig);
+
+createNextIntlPlugin('./i18n.ts')
